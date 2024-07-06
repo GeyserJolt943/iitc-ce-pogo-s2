@@ -346,43 +346,45 @@
 			if (typeof text != 'string') {
 				text = JSON.stringify(text);
 			}
+			
+			navigator.share(text);
 
-			if (typeof window.saveFile != 'undefined') {
-				window.saveFile(text, filename, 'application/json');
-				return;
-			}
+// 			if (typeof window.saveFile != 'undefined') {
+// 				window.saveFile(text, filename, 'application/json');
+// 				return;
+// 			}
 
-			alert('You are using an old version of IITC.\r\nIn the future this plugin will no longer be compatible with it.\r\nPlease, upgrade ASAP to IITC-CE https://iitc.modos189.ru/');
+// 			alert('You are using an old version of IITC.\r\nIn the future this plugin will no longer be compatible with it.\r\nPlease, upgrade ASAP to IITC-CE https://iitc.modos189.ru/');
 
 
-			if (typeof window.android !== 'undefined' && window.android.saveFile) {
-				window.android.saveFile(filename, 'application/json', text);
-				return;
-			}
+// 			if (typeof window.android !== 'undefined' && window.android.saveFile) {
+// 				window.android.saveFile(filename, 'application/json', text);
+// 				return;
+// 			}
 
-			if (isIITCm()) {
-				promptForCopy(text);
-				return;
-			}
+// 			if (isIITCm()) {
+// 				promptForCopy(text);
+// 				return;
+// 			}
 
-			const element = document.createElement('a');
+// 			const element = document.createElement('a');
 
-			// http://stackoverflow.com/questions/13405129/javascript-create-and-save-file
-			const file = new Blob([text], {type: 'text/plain'});
-			const objectURL = URL.createObjectURL(file);
-			element.setAttribute('href', objectURL);
+// 			// http://stackoverflow.com/questions/13405129/javascript-create-and-save-file
+// 			const file = new Blob([text], {type: 'text/plain'});
+// 			const objectURL = URL.createObjectURL(file);
+// 			element.setAttribute('href', objectURL);
 
-			element.setAttribute('download', filename);
+// 			element.setAttribute('download', filename);
 
-			element.style.display = 'none';
-			document.body.appendChild(element);
+// 			element.style.display = 'none';
+// 			document.body.appendChild(element);
 
-			element.click();
+// 			element.click();
 
-			setTimeout(function () {
-				document.body.removeChild(element);
-				URL.revokeObjectURL(objectURL);
-			}, 0);
+// 			setTimeout(function () {
+// 				document.body.removeChild(element);
+// 				URL.revokeObjectURL(objectURL);
+// 			}, 0);
 		}
 
 		/**
