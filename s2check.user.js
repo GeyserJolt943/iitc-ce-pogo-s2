@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         PoGO Tools, PoGOHWH Edition
-// @namespace    https://github.com/PoGOHWH/iitc-ce-pogo-s2
-// @id           s2check@pogohwh
+// @name         PoGO Tools, PoGOHWH Edition - modified by Robert Bressi
+// @namespace    https://github.com/robertbressi/iitc-ce-pogo-s2
+// @id           s2check@robertbressi
 // @category     Layer
-// @updateURL    https://raw.githubusercontent.com/PoGOHWH/iitc-ce-pogo-s2/pogohwh/s2check.user.js
-// @downloadURL  https://raw.githubusercontent.com/PoGOHWH/iitc-ce-pogo-s2/pogohwh/s2check.user.js
-// @homepageURL  https://github.com/PoGOHWH/iitc-ce-pogo-s2
+// @updateURL    https://raw.githubusercontent.com/robertbressi/iitc-ce-pogo-s2/pogohwh/s2check.user.js
+// @downloadURL  https://raw.githubusercontent.com/robertbressi/iitc-ce-pogo-s2/pogohwh/s2check.user.js
+// @homepageURL  https://github.com/robertbressi/iitc-ce-pogo-s2
 // @supportURL   https://twitter.com/PogoCells
 // @version      0.99.2
 // @description  Pokemon Go tools over IITC. News on https://twitter.com/PogoCells
